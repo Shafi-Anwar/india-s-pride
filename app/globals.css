@@ -1,33 +1,136 @@
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
+  @tailwind components;
+  @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+  @layer base {
+    :root {
+      --background: 0 0% 100%;
+      --foreground: 0 0% 3.9%;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+      --card: 0 0% 100%;
+      --card-foreground: 0 0% 3.9%;
+
+      --popover: 0 0% 100%;
+      --popover-foreground: 0 0% 3.9%;
+
+      --primary: 0 0% 9%;
+      --primary-foreground: 0 0% 98%;
+
+      --secondary: 0 0% 96.1%;
+      --secondary-foreground: 0 0% 9%;
+
+      --muted: 0 0% 96.1%;
+      --muted-foreground: 0 0% 45.1%;
+
+      --accent: 0 0% 96.1%;
+      --accent-foreground: 0 0% 9%;
+
+      --destructive: 0 84.2% 60.2%;
+      --destructive-foreground: 0 0% 98%;
+
+      --border: 0 0% 89.8%;
+      --input: 0 0% 89.8%;
+      --ring: 0 0% 3.9%;
+
+      --radius: 0.5rem;
+    }
+
+    .dark {
+      --background: 0 0% 3.9%;
+      --foreground: 0 0% 98%;
+
+      --card: 0 0% 3.9%;
+      --card-foreground: 0 0% 98%;
+
+      --popover: 0 0% 3.9%;
+      --popover-foreground: 0 0% 98%;
+
+      --primary: 0 0% 98%;
+      --primary-foreground: 0 0% 9%;
+
+      --secondary: 0 0% 14.9%;
+      --secondary-foreground: 0 0% 98%;
+
+      --muted: 0 0% 14.9%;
+      --muted-foreground: 0 0% 63.9%;
+
+      --accent: 0 0% 14.9%;
+      --accent-foreground: 0 0% 98%;
+
+      --destructive: 0 62.8% 30.6%;
+      --destructive-foreground: 0 0% 98%;
+
+      --border: 0 0% 14.9%;
+      --input: 0 0% 14.9%;
+      --ring: 0 0% 83.1%;
+    }
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  @layer base {
+    * {
+      @apply border-border;
+    }
+    body {
+      @apply bg-background text-foreground;
+    }
   }
-}
+  .hero {
+    background: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+      ),
+      url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs40424.pcdn.co%2Fin%2Fwp-content%2Fuploads%2F2022%2F10%2FWhat-is-M.Tech-in-Artificial-Intelligence_AI.jpg&f=1&nofb=1&ipt=56fcfe62bb82c343506e1a5d7d10d4ef1340d5368c081aff34ccf9f8dbe251fb&ipo=images");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+  }
+  
+  .hero::after {
+    content: '';
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    top: 0; 
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+  }
+  
+
+  
+  .hero-text {
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    padding: 0 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      height: 50vh; /* Adjust the height for tablets and smaller devices */
+    }
+    .hero-text {
+      font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero {
+      height: 40vh; /* Adjust the height for mobile devices */
+    }
+    .hero-text {
+      font-size: 1.25rem; /* Adjust font size for smaller screens */
+    }
+  }
+  
