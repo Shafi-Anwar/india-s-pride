@@ -12,7 +12,7 @@
 
       --popover: 0 0% 100%;
       --popover-foreground: 0 0% 3.9%;
-
+   
       --primary: 0 0% 9%;
       --primary-foreground: 0 0% 98%;
 
@@ -80,13 +80,13 @@
         rgba(0, 0, 0, 0.7), 
         rgba(0, 0, 0, 0.7)
       ),
-      url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs40424.pcdn.co%2Fin%2Fwp-content%2Fuploads%2F2022%2F10%2FWhat-is-M.Tech-in-Artificial-Intelligence_AI.jpg&f=1&nofb=1&ipt=56fcfe62bb82c343506e1a5d7d10d4ef1340d5368c081aff34ccf9f8dbe251fb&ipo=images");
+      url("https://think360studio-media.s3.ap-south-1.amazonaws.com/download/india-flag-2021-wallpaper-1.png");
     background-size: cover;
     background-position: center;
     position: relative;
     width: 100%;
-    height: 100vh; /* Full height */
     display: flex;
+    height: 100vh; /* Full height */
     justify-content: center;
     align-items: center;
     transition: all 1s;
@@ -105,12 +105,25 @@
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
   }
-  
+
+.in-fe::after {
+  content: '';
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    top: 0; 
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
 
   
   .hero-text {
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 4rem;
     text-align: center;
     color: white;
     padding: 0 1rem;
@@ -121,7 +134,7 @@
       height: 50vh; /* Adjust the height for tablets and smaller devices */
     }
     .hero-text {
-      font-size: 1.5rem; /* Adjust font size for smaller screens */
+      font-size: 3rem; /* Adjust font size for smaller screens */
     }
   }
   
@@ -130,7 +143,9 @@
       height: 40vh; /* Adjust the height for mobile devices */
     }
     .hero-text {
-      font-size: 1.25rem; /* Adjust font size for smaller screens */
+      font-size: 2rem; /* Adjust font size for smaller screens */
     }
   }
-  
+  /* Add to your global styles or component-specific styles */
+
+

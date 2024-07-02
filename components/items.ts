@@ -14,5 +14,9 @@ export const routes = [
         href:"/development",
         label:"Development"
     },
+    {
+        href:"/*news",
+        label:"News"
+    }
     
 ]

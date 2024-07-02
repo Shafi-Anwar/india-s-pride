@@ -5,7 +5,8 @@ const nextConfig = {
             {
                 protocol: 'https',
                 hostname: 'external-content.duckduckgo.com',
-            }
+            },
+
         ]
     }
 };
