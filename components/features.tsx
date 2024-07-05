@@ -94,7 +94,6 @@ export default function Features() {
           </p>
         </div>
       </div>
-      <Link href="/about" className="text-gray-700 hover:text-blue-500 text-center font-bold">For more info about them click me</Link>
     </section>
   )
 }
