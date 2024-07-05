@@ -26,7 +26,6 @@ const NewsPage = async () => {
       <ul className="space-y-4">
         {articles.map((article, index) => (
           <li key={index} className="p-4 border rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <Image src={article.image} alt='dr' />
             <h2 className="text-2xl font-semibold mb-2">{article.title}</h2>
             <p className="text-gray-700 mb-2">{article.description}</p>
             <a
