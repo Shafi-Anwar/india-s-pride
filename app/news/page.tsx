@@ -5,7 +5,6 @@ import Image from 'next/image';
 type Article = {
   title: string;
   description: string;
-  image: string;
   url: string;
 };
 
