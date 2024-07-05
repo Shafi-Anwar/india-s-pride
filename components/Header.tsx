@@ -3,10 +3,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import { routes } from './items';
+import {RegisterLink, LoginLink} from "@kinde-oss/kinde-auth-nextjs/components";
 
-function Header() {
+export default function  Header() {
+
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -28,6 +29,8 @@ function Header() {
               {item.label}
           </Link>
         ))}
+        <RegisterLink className='text-gray-700 hover:text-blue-500'>SignUp</RegisterLink>
+        <LoginLink className='text-gray-700 hover:text-blue-500'>SignIn</LoginLink>
       </nav>
       <div className='md:hidden'>
         <button onClick={toggleMenu} className='text-gray-700 focus:outline-none'>
@@ -43,14 +46,15 @@ function Header() {
             {routes.map((item) => (
               <Link key={item.href} href={item.href} passHref className='block px-4 py-2 text-gray-700 hover:bg-gray-200'>
                   {item.label}
-
               </Link>
             ))}
+            <RegisterLink className='block px-4 py-2 text-gray-700 hover:bg-gray-200'>SignUp</RegisterLink>
+            <LoginLink className='block px-4 py-2 text-gray-700 hover:bg-gray-200'>SignIn</LoginLink>
           </div>
+
         </nav>
       )}
     </header>
   );
 }
 
-export default Header;

@@ -124,11 +124,28 @@
   .hero-text {
     font-weight: bold;
     font-size: 4rem;
+
     text-align: center;
     color: white;
     padding: 0 1rem;
   }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
   
+  .animate-slideDown {
+    animation: slideDown 0.3s ease-out forwards;
+  }
+  
+
   @media (max-width: 768px) {
     .hero {
       height: 50vh; /* Adjust the height for tablets and smaller devices */
