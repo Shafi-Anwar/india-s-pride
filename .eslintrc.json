@@ -1,8 +1,7 @@
 {
   "extends": "next/core-web-vitals",
-    "rules": {
-      "react/no-unescaped-entities": ["error", {"forbid": ["'"]}],
-      "@next/next/no-img-element": "on" // Disable this rule if you're using next/image
-    }
+  "rules": {
+    "react/no-unescaped-entities": ["error", {"forbid": ["'"]}],
+    "@next/next/no-img-element": "off" // Disable this rule if you're using next/image
   }
-  
+}
