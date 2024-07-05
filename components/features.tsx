@@ -1,6 +1,6 @@
 
 import Link from "next/link"
-
+import Image from "next/image"
 export default function Features() {
   return (
     <section className="grid grid-cols-1 gap-6 p-4 md:grid-cols-2 lg:grid-cols-3 lg:p-6">
@@ -8,7 +8,7 @@ export default function Features() {
         <Link href="https://en.wikipedia.org/wiki/Taj_Mahal" className="absolute inset-0 z-10" prefetch={false}>
           <span className="sr-only">View</span>
         </Link>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Taj_Mahal_%28Edited%29.jpeg" alt="Taj Mahal" className="object-cover w-full h-64" />
+        <Image src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Taj_Mahal_%28Edited%29.jpeg" alt="Taj Mahal" className="object-cover w-full h-64" />
         <div className="p-4 bg-background">
           <h3 className="text-xl font-bold">Taj Mahal</h3>
           <p className="text-sm text-muted-foreground">
@@ -21,7 +21,7 @@ export default function Features() {
         <Link href="https://en.wikipedia.org/wiki/Himalayas" className="absolute inset-0 z-10" prefetch={false}>
           <span className="sr-only">View</span>
         </Link>
-        <img src="https://c02.purpledshub.com/uploads/sites/41/2023/08/Himalayas-Getty-e1691664200559-1024x684.jpg?w=1200" alt="Himalayan Mountains" className="object-cover w-full h-64" />
+        <Image src="https://c02.purpledshub.com/uploads/sites/41/2023/08/Himalayas-Getty-e1691664200559-1024x684.jpg?w=1200" alt="Himalayan Mountains" className="object-cover w-full h-64" />
         <div className="p-4 bg-background">
           <h3 className="text-xl font-bold">Himalayan Mountains</h3>
           <p className="text-sm text-muted-foreground">
@@ -34,7 +34,7 @@ export default function Features() {
         <Link href="https://en.wikipedia.org/wiki/ISRO" className="absolute inset-0 z-10" prefetch={false}>
           <span className="sr-only">View</span>
         </Link>
-        <img src="https://media.licdn.com/dms/image/D5612AQH7d1aTU312Iw/article-cover_image-shrink_720_1280/0/1692785210884?e=2147483647&v=beta&t=EGaO43slYXborFey21Gp2zGi_LgZCGeEIQNuPc75P1E" alt="Holi Festival" className="object-cover w-full h-64" />
+        <Image src="https://media.licdn.com/dms/image/D5612AQH7d1aTU312Iw/article-cover_image-shrink_720_1280/0/1692785210884?e=2147483647&v=beta&t=EGaO43slYXborFey21Gp2zGi_LgZCGeEIQNuPc75P1E" alt="Holi Festival" className="object-cover w-full h-64" />
         <div className="p-4 bg-background">
           <h3 className="text-xl font-bold">Space Technology</h3>
           <p className="text-sm text-muted-foreground">
@@ -46,7 +46,7 @@ export default function Features() {
         <Link href="https://www.welcomerajasthan.com/rajasthan-textiles.htm" className="absolute inset-0 z-10" prefetch={false}>
           <span className="sr-only">View</span>
         </Link>
-        <img src="https://www.rajasthantourplanner.com/blog/wp-content/uploads/2021/04/Famous-Textiles-of-Rajasthan.jpg" alt="Rajasthani Textiles" className="object-cover w-full h-64" />
+        <Image src="https://www.rajasthantourplanner.com/blog/wp-content/uploads/2021/04/Famous-Textiles-of-Rajasthan.jpg" alt="Rajasthani Textiles" className="object-cover w-full h-64" />
         <div className="p-4 bg-background">
           <h3 className="text-xl font-bold">Rajasthani Textiles</h3>
           <p className="text-sm text-muted-foreground">
@@ -59,7 +59,7 @@ export default function Features() {
         <Link href="https://nalandauniv.edu.in" className="absolute inset-0 z-10" prefetch={false}>
           <span className="sr-only">View</span>
         </Link>
-        <img src="https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2022/02/18114941/Nalanda-University.jpg" alt="Ayurvedic Medicine" className="object-cover w-full h-64" />
+        <Image src="https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2022/02/18114941/Nalanda-University.jpg" alt="Ayurvedic Medicine" className="object-cover w-full h-64" />
         <div className="p-4 bg-background">
           <h3 className="text-xl font-bold">Nalanda University</h3>
           <p className="text-sm text-muted-foreground">
@@ -71,7 +71,7 @@ export default function Features() {
         <Link href="https://en.wikipedia.org/wiki/Yoga" className="absolute inset-0 z-10" prefetch={false}>
           <span className="sr-only">View</span>
         </Link>
-        <img src="https://img.freepik.com/free-vector/set-yoga-postures_1308-119286.jpg" alt="Yoga" className="object-cover w-full h-64" />
+        <Image src="https://Image.freepik.com/free-vector/set-yoga-postures_1308-119286.jpg" alt="Yoga" className="object-cover w-full h-64" />
         <div className="p-4 bg-background">
           <h3 className="text-xl font-bold">Yoga</h3>
           <p className="text-sm text-muted-foreground">
@@ -86,7 +86,7 @@ export default function Features() {
         <Link href="https://en.wikipedia.org/wiki/Information_technology_in_India#:~:text=The%20information%20technology%20(I.T.)%20industry,245%20billion%20in%20FY%202023." className="absolute inset-0 z-10" prefetch={false}>
           <span className="sr-only">View</span>
         </Link>
-        <img src="https://st.adda247.com/https://adda247jobs-wp-assets-prod.adda247.com/articles/wp-content/uploads/2023/11/04122906/Information-Technology-Development-in-India.jpg" alt="it" className="object-cover w-full h-64" />
+        <Image src="https://st.adda247.com/https://adda247jobs-wp-assets-prod.adda247.com/articles/wp-content/uploads/2023/11/04122906/Information-Technology-Development-in-India.jpg" alt="it" className="object-cover w-full h-64" />
         <div className="p-4 bg-background">
           <h3 className="text-xl font-bold">Information Technology in India</h3>
           <p className="text-sm text-muted-foreground">
